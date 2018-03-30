@@ -19,18 +19,18 @@ var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 
 
-function display_responses(){
-    if (document.getElementById("real_fire_text")){
+function display_responses(id){
+    if (id === "real_fire_button"){
         real_fire_button_clicks += 1;
-        document.getElementById("real_fire_text").innerHTML = "Real fire: " + real_fire_button_clicks;
-    }else if (document.getElementById("fire_drill_button")){
+    }else if (id === "fire_drill_button"){
         fire_drill_button_clicks += 1;
-        document.getElementById("fire_drill_button").innerHTML = "It's a drill: " + fire_drill_button_clicks;
-    }else if (document.getElementById("dont_see_fire_button")){
+    }/*else if (document.getElementById("dont_see_fire_button")){
         dont_see_fire_button_clicks += 1;
-        document.getElementById("dont_see_fire_button").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
     }else if (document.getElementById("dont_hear_alarm_button")){
         dont_hear_alarm_button += 1;
-        document.getElementById("dont_hear_alarm_button").innerHTML = "Real fire: " + dont_hear_alarm_button;
-    }
+    }*/
+    document.getElementById("real_fire_text").innerHTML = "Real fire: " + real_fire_button_clicks;
+    document.getElementById("fire_drill_text").innerHTML = "It's a drill: " + fire_drill_button_clicks;
+    document.getElementById("dont_see_fire_text").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
+    document.getElementById("dont_hear_alarm_text").innerHTML = "Real fire: " + dont_hear_alarm_button;
 }
