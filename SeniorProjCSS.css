@@ -3,21 +3,33 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.container{
+    background-color: #F1D0D6;
+}
+
 .buttons{
     text-align: center
 }
 
+.alarm_pic1{
+    float: left;
+}
+
+.alarm_pic2{
+    float: right;
+}
+
 /*Changes color of button1 when hovered over*/
-#button1:hover {
-    background-color: #4CAF50; /* Green */
+#real_fire_button:hover {
+    background-color: #6CA86E; /* Green */
     color: white;
 }
 
-#button1{
+#real_fire_button{
     width: 180px;
     padding: 32px 32px;
     align-self: center;
-    background-color: royalblue;
+    background-color: #529BDB;
     border-radius: 50%;
     
 }
@@ -29,13 +41,13 @@
 
 #button2{
     padding: 32px 32px;
-    background-color: rebeccapurple;
+    background-color: #9868C9;
     border-radius: 50%;
     
 }
 
 #button3{
     padding: 32px 32px;
-    background-color: violet;
+    background-color: #D198D1;
     border-radius: 50%;
 }

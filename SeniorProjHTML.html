@@ -7,22 +7,36 @@
         <link rel = "stylesheet" href = "SeniorProjCSS.css" type = "text/css">
         <!-- added fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src = "SeniorProjJS.js"></script>
         <title>Senior Project Test</title>
     </head>
 
     <body>
-        <div class = "title">
-            <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
-            <h1>Emergency Fire Alarm</h1>
-        </div>
-        <div class = "buttons">
-            <button id = "button1" type = "button">Click 1!</button>
-            <br>
-            
-            <button id = "button2" type = "button">Click 2!</button>
-            <br>
-            <br>
-            <button id = "button3" type = "button">Click 3!</button>
+        <div class = "container">
+            <div class = "alarm_pic_1">
+                <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
+            </div>
+            <div class = "title">
+                <h1>Emergency Fire Alarm</h1>
+            </div>
+            <div class = "alarm_pic_1">
+                    <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
+            </div>
+            <!-- This div contains all the buttons:
+            1) Hear fire alarm: don't see fire
+            2) Hear fire alarm: see fire
+            3) Don't hear fire alarm
+            4) Drill    
+            5) Real fire spotted -->
+            <div class = "buttons">
+                <button id = "real_fire_button" type = "button">Click 1!</button>
+                <br>
+                
+                <button id = "button2" type = "button">Click 2!</button>
+                <br>
+                <br>
+                <button id = "button3" type = "button">Click 3!</button>
+            </div>
         </div>
     </body>
 </html>
