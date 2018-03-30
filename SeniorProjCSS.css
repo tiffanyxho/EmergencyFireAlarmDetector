@@ -31,14 +31,15 @@
     align-self: center;
     background-color: #529BDB;
     border-radius: 50%;
+
 }
 
 /*Make button2 have a shadow when hovered over*/
-#button2:hover{
+#fire_drill_button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#button2{
+#fire_drill_button{
     padding: 32px 32px;
     background-color: #9868C9;
     border-radius: 50%;
