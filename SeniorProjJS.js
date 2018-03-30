@@ -14,5 +14,5 @@ function display_responses(){
 */
 
 function display_responses(){
-    document.getElementById("notification_text").innerHTML = "HIIII!!!";
+    document.getElementById("real_fire_text").innerHTML = "HIIII!!!";
 }
