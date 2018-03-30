@@ -14,6 +14,12 @@ function display_responses(){
 */
 
 // Should display how many people pressed which button to users
+
+var real_fire_button_clicks = 0;
+
 function display_responses(){
-    document.getElementById("real_fire_text").innerHTML = "HIIII!!!";
+    if (document.getElementById("real_fire_text")){
+        real_fire_button_clicks += 1;
+        document.getElementById("real_fire_text").innerHTML = "Real fire: " + real_fire_button_clicks;
+    }
 }
