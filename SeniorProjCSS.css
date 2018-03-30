@@ -11,6 +11,7 @@
     text-align: center
 }
 
+/*Check this out for the picture placement: https://www.w3schools.com/css/css_positioning.asp*/
 .alarm_pic1{
     float: left;
 }
