@@ -43,6 +43,13 @@ function display_responses(id){
     document.getElementById("dont_hear_alarm_text").innerHTML = "Don't hear alarm: " + dont_hear_alarm_button;
 }
 
+/*Clears the elemnts in a div*/
 function clearBox(elementID){
     document.getElementById(elementID).innerHTML = "";
 }
+
+/* Links to help with adding back HTML for buttons... - might need to make a div to hold all of the removed content in the first div
+ * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+ * https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript/3450726?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+ * 
+ */
