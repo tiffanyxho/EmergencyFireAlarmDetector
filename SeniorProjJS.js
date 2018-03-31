@@ -19,6 +19,12 @@ var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 var last_button_clicked_id = "";
 
+/* Trying to use an EventListener to increment responses instead of onclick in html
+function main(){
+    document.getElementById("real_fire_text").addEventListener("click", display_responses("real_fire_button"));    
+}
+document.getElementById("real_fire_text").addEventListener("click", display_responses("real_fire_button"));
+*/
 
 function display_responses(id){
     if (id === "real_fire_button"){

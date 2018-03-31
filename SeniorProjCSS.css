@@ -39,6 +39,7 @@
     padding: 32px 32px;
     background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
     background-size: 100px 100px;
+    color: #6262D3;
 }
 
 /*Make button2 have a shadow when hovered over*/
@@ -64,6 +65,7 @@
     border-radius: 50%;
 }
 
+/*
 .end_screen{
     visibility: hidden;
-}
+}*/
