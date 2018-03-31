@@ -42,3 +42,7 @@ function display_responses(id){
     document.getElementById("dont_see_fire_text").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
     document.getElementById("dont_hear_alarm_text").innerHTML = "Don't hear alarm: " + dont_hear_alarm_button;
 }
+
+function clearBox(elementID){
+    document.getElementById(elementID).innerHTML = "";
+}
