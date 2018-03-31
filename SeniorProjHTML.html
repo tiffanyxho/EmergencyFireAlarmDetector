@@ -13,14 +13,14 @@
 
     <body>
         <div class = "container">
-            <div class = "alarm_pic_1">
+            <div class = "alarm_pic_left">
+                <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
+            </div>
+            <div class = "alarm_pic_right">
                 <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
             </div>
             <div class = "title">
                 <h1>Emergency Fire Alarm</h1>
-            </div>
-            <div class = "alarm_pic_1">
-                    <img src = "ambulance_alarm_pic.png" alt = "Fire alarm image could not be displayed.">
             </div>
             <!-- This div contains all the buttons:
             1) Hear fire alarm: don't see fire
@@ -29,12 +29,16 @@
             4) Drill    
             5) Real fire spotted -->
             <div class = "buttons">
-                <button id = "real_fire_button" type = "button" onclick = "display_responses(this.id);">Click 1!</button>
-                <button id = "fire_drill_button" type = "button" onclick = "display_responses(this.id);">Click 2!</button>
+                <button id = "real_fire_button" type = "button" onclick = "display_responses(this.id);">REAL FIRE</button>
                 <br>
                 <br>
-                <button id = "dont_see_fire_button" type = "button" onclick = "display_responses(this.id);">Click 3!</button>
-                <button id = "dont_hear_alarm_button" type = "button" onclick = "display_responses(this.id);">Click 3!</button>
+                <p id = "hear_alarm_text">I hear a fire alarm &#38;...</p>
+                <button id = "fire_drill_button" type = "button" onclick = "display_responses(this.id);">It's a drill.</button>
+                <button id = "dont_see_fire_button" type = "button" onclick = "display_responses(this.id);">Don't see a fire.</button>
+                <br>
+                <p>OR</p>
+                <br>
+                <button id = "dont_hear_alarm_button" type = "button" onclick = "display_responses(this.id);">Don't hear alarm.</button>
             </div>
             <div class = "end_screen" id = "end_screen">
                 <p id = "real_fire_text">Real fire: 0</p>

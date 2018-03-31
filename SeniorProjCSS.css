@@ -12,12 +12,14 @@
 }
 
 /*Check this out for the picture placement: https://www.w3schools.com/css/css_positioning.asp*/
-.alarm_pic1{
+.alarm_pic_left{
     float: left;
+    padding-left: 400px;
 }
 
-.alarm_pic2{
+.alarm_pic_right{
     float: right;
+    padding-right: 400px;
 }
 
 /*Changes color of button1 when hovered over*/
@@ -32,7 +34,7 @@
     align-self: center;
     background-color: #529BDB;
     border-radius: 50%;
-
+    background: "fire_pic.png";
 }
 
 /*Make button2 have a shadow when hovered over*/
@@ -54,5 +56,7 @@
 }
 
 #dont_hear_alarm_button{
-    
+    padding: 32px 32px;
+    background-color: #636CD7;
+    border-radius: 50%;
 }
