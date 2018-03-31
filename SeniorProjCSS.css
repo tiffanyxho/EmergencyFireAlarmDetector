@@ -1,22 +1,26 @@
+/*Centers title*/
 .title{
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
+/*Set background color*/
 .container{
     background-color: #F1D0D6;
 }
 
+/*centers all buttons*/
 .buttons{
-    text-align: center
+    text-align: center;
 }
 
-/*Check this out for the picture placement: https://www.w3schools.com/css/css_positioning.asp*/
+/*Moves alarm closer to center/title.*/
 .alarm_pic_left{
     float: left;
     padding-left: 400px;
 }
 
+/*Moves alarm closer to center/title.*/
 .alarm_pic_right{
     float: right;
     padding-right: 400px;
@@ -24,17 +28,19 @@
 
 /*Changes color of button1 when hovered over*/
 #real_fire_button:hover {
-    background-color: #6CA86E; /* Green */
-    color: white;
+    /*background-color: #6CA86E;
+    color: white;*/
 }
+
 
 #real_fire_button{
     width: 180px;
+    height: 100px;
     padding: 32px 32px;
-    align-self: center;
-    background-color: #529BDB;
+    /*background-color: #529BDB;*/
     border-radius: 50%;
-    background: "fire_pic.png";
+    background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt") no-repeat;
+    background-size: 180px 100px;
 }
 
 /*Make button2 have a shadow when hovered over*/
@@ -46,7 +52,6 @@
     padding: 32px 32px;
     background-color: #9868C9;
     border-radius: 50%;
-    
 }
 
 #dont_see_fire_button{
@@ -59,4 +64,8 @@
     padding: 32px 32px;
     background-color: #636CD7;
     border-radius: 50%;
+}
+
+.end_screen{
+    visibility: hidden;
 }
