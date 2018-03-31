@@ -34,13 +34,11 @@
 
 
 #real_fire_button{
-    width: 180px;
+    width: 500px;
     height: 100px;
     padding: 32px 32px;
-    /*background-color: #529BDB;*/
-    border-radius: 50%;
-    background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt") no-repeat;
-    background-size: 180px 100px;
+    background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
+    background-size: 100px 100px;
 }
 
 /*Make button2 have a shadow when hovered over*/
