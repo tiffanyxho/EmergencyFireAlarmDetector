@@ -24,8 +24,9 @@ see_no_alarm = get_no_alarm.json()["_version"]
 get_fire_drill = requests.get("http://localhost:9200/button_press/button/fire_drill")
 see_fire_drill = get_fire_drill.json()["_version"]
 
-def update_number(which_button):
-    
+# supposed to update user responses
+def update_user_responses(which_button):
+
 
 def main():
     
