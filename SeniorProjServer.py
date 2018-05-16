@@ -4,11 +4,6 @@ from flask import Flask
 # server
 app = Flask(__name__)
 
-""" not sure what these two lines below do
-res = requests.get('htttp://localhost:9200')
-print(res.content)
-"""
-
 # annotation / decorator
 @app.route("/")
 def root_mstarch():
@@ -18,7 +13,7 @@ def root_mstarch():
 @app.route("/see_fire")
 def see_fire():
     see_fire = requests.post("http://localhost:9200/button_press/button/yes_alarm_see_fire", json = {"button_press": "yes_alarm_see_fire"})
-    return "work!"
+    return "I SEE FIRE!"
     # TODO: validate
 
 @app.route("/get_see_fire_count")
@@ -28,26 +23,44 @@ def get_see_fire_count():
     see_fire_version = get_see_fire.json()["_version"]
     return json.dumps({"count": see_fire_version})
 
-"""
-no_fire = requests.post("http://localhost:9200/button_press/button/yes_alarm_no_fire", json = {"button_press": "yes_alarm_no_fire"})
-no_alarm = requests.post("http://localhost:9200/button_press/button/no_alarm", json = {"button_press": "no_alarm"})
-fire_drill = requests.post("http://localhost:9200/button_press/button/fire_drill", json = {"button_press": "fire_drill"})
+@app.route("/fire_drill")
+def drill():
+    fire_drill = requests.post("http://localhost:9200/button_press/button/fire_drill", json = {"button_press": "fire_drill"})
+    return "DRILL!!"
 
-get_no_fire = requests.get("http://localhost:9200/button_press/button/yes_alarm_no_fire")
-see_no_fire = get_no_fire.json()["_version"]
-
-get_no_alarm = requests.get("http://localhost:9200/button_press/button/no_alarm")
-see_no_alarm = get_no_alarm.json()["_version"]
-
+@app.route("/get_drill_count")
 def get_drill_count():
     get_fire_drill = requests.get("http://localhost:9200/button_press/button/fire_drill")
-    see_fire_drill = get_fire_drill.json()["_version"]
-    return {"count": see_fire_drill}
+    fire_drill_version = get_fire_drill.json()["_version"]
+    return json.dumps({"count": fire_drill_version})
 
+@app.route("/no_fire")
+def no_fire():
+    no_fire = requests.post("http://localhost:9200/button_press/button/yes_alarm_no_fire", json = {"button_press": "yes_alarm_no_fire"})
+    return "DON'T SEE FIRE"
+
+@app.route("/get_no_fire_count")
+def get_no_fire_count():
+    get_no_fire = requests.get("http://localhost:9200/button_press/button/yes_alarm_no_fire")
+    no_fire_version = get_no_fire.json()["_version"]
+    return json.dumps({"count": no_fire_version})
+
+@app.route("/no_alarm")
+def no_alarm():
+    no_alarm = requests.post("http://localhost:9200/button_press/button/no_alarm", json = {"button_press": "no_alarm"})
+    return "DON'T HEAR ALARM!"
+
+@app.route("/get_no_alarm_count")
+def get_no_alarm_count():
+    get_no_alarm = requests.get("http://localhost:9200/button_press/button/no_alarm")
+    no_alarm_version = get_no_alarm.json()["_version"]
+    return json.dumps({"count": no_alarm_version})
+
+
+"""
 annonobj["count"]
 # supposed to update user responses
 def update_user_responses(which_button):
-
 
 def main():
     
