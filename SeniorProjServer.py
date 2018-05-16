@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # annotation / decorator
 @app.route("/")
-def root_mstarch():
+def root():
     return "Root webpage"
 
 """create 1 post for each button in app, 4 total"""

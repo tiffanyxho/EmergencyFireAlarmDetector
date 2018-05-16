@@ -53,3 +53,18 @@ function clearBox(elementID){
  * https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript/3450726?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
  * 
  */
+
+ /* 
+ *Attempting server code JS version */
+
+
+function httpGet(theUrl){
+    var xmlHttp  =  new XMLHttpRequest();
+    xmlHttp.open(  "GET", theUrl,false);  // false for synchronous request
+    xmlHttp.send(  null  );
+    return xmlHttp.responseText;
+}
+
+function see_fire(){
+    var see_fire =  
+}
