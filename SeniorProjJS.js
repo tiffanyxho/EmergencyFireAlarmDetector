@@ -54,10 +54,9 @@ function clearBox(elementID){
  * 
  */
 
- /* 
- *Attempting server code JS version */
 
-
+/**Server code - retrieving data to make usable - starts here*/
+/**get method (equivalent of get method in requests library in python) */
 function get(theUrl){
     var xmlHttp  =  new XMLHttpRequest();
     xmlHttp.open(  "GET", theUrl,false);  // false for synchronous request

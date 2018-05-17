@@ -55,15 +55,3 @@ def get_no_alarm_count():
     get_no_alarm = requests.get("http://localhost:9200/button_press/button/no_alarm")
     no_alarm_version = get_no_alarm.json()["_version"]
     return json.dumps({"count": no_alarm_version})
-
-
-"""
-annonobj["count"]
-# supposed to update user responses
-def update_user_responses(which_button):
-
-def main():
-    
-
-main()
-"""
