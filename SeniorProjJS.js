@@ -65,17 +65,49 @@ function get(theUrl){
     return xmlHttp.responseText;
 }
 
-/*Attempt at JS see_fire*/
+/*JS see_fire func*/
 function see_fire(){
     var see_fire = get("http://localhost:5000/see_fire");
     return "JAVASCRIPT: I SEE FIRE!";
 }
 
-function get_see_fire(){
+/*Get data from the python server to get the see fire count*/
+function get_see_fire_count(){
     var see_fire = get("http://localhost:5000/get_see_fire_count");
     return see_fire;
 }
-/**python see_fire function
- * see_fire = requests.post("http://localhost:9200/button_press/button/yes_alarm_see_fire", json = {"button_press": "yes_alarm_see_fire"})
-    return "I SEE FIRE!"
-     */
+
+/*JS fire_drill func */
+function fire_drill(){
+    var fire_drill = get("http://localhost:5000/fire_drill");
+}
+
+/*get the fire_drill count */
+function get_fire_drill_count(){
+    var fire_drill = get("http://localhost:5000/get_fire_drill_count");
+    return fire_drill;
+}
+
+/*JS no_fire func*/
+function no_fire(){
+    var no_fire = get("http://localhost:5000/no_fire");
+    return "DON'T SEE FIRE";
+}
+
+/*get the no_fire count */
+function get_no_fire_count(){
+    var no_fire = get("http://localhost:5000/get_no_fire_count");
+    return no_fire;
+}
+
+/**JS no_alarm func */
+function no_alarm(){
+    no_alarm = get("http://localhost:5000/no_alarm");
+    return "DON'T HEAR ALARM!";
+}
+
+/**get no_alarm count */
+function get_no_alarm_count(){
+    get_no_alarm = requests.get("http://localhost:5000/get_no_alarm_count");
+    return get_no_alarm;
+}
