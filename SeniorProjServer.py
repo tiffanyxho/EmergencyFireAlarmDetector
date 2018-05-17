@@ -24,12 +24,12 @@ def get_see_fire_count():
     return json.dumps({"count": see_fire_version})
 
 @app.route("/fire_drill")
-def drill():
+def fire_drill():
     fire_drill = requests.post("http://localhost:9200/button_press/button/fire_drill", json = {"button_press": "fire_drill"})
     return "DRILL!!"
 
-@app.route("/get_drill_count")
-def get_drill_count():
+@app.route("/get_fire_drill_count")
+def get_fire_drill_count():
     get_fire_drill = requests.get("http://localhost:9200/button_press/button/fire_drill")
     fire_drill_version = get_fire_drill.json()["_version"]
     return json.dumps({"count": fire_drill_version})
