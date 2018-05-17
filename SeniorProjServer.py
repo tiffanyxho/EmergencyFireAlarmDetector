@@ -7,7 +7,7 @@ app = Flask(__name__)
 # annotation / decorator
 @app.route("/")
 def root():
-    return "Root webpage"
+    return "ROOT WEBPAGE!"
 
 """create 1 post for each button in app, 4 total"""
 @app.route("/see_fire")
