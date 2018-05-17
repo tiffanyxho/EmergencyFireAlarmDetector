@@ -58,7 +58,7 @@ function clearBox(elementID){
  *Attempting server code JS version */
 
 
-function httpGet(theUrl){
+function get(theUrl){
     var xmlHttp  =  new XMLHttpRequest();
     xmlHttp.open(  "GET", theUrl,false);  // false for synchronous request
     xmlHttp.send(  null  );
@@ -124,10 +124,17 @@ function post(path, params, method) {
     form.submit();
 }
 
-/*Attempt at JS see_fire
+/*Attempt at JS see_fire*/
 function see_fire(){
-    var see_fire =  
-}*/
+    var see_fire = get("http://localhost:5000/see_fire");
+    return "JAVASCRIPT: I SEE FIRE!";
+}
+
+function get_see_fire(){
+    var see_fire = get("http://localhost:5000/get_see_fire_count");
+    return see_fire;
+}
 /**python see_fire function
  * see_fire = requests.post("http://localhost:9200/button_press/button/yes_alarm_see_fire", json = {"button_press": "yes_alarm_see_fire"})
-    return "I SEE FIRE!" */
+    return "I SEE FIRE!"
+     */
