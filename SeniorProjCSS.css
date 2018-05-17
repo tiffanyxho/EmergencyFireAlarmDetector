@@ -17,13 +17,13 @@
 /*Moves alarm closer to center/title.*/
 .alarm_pic_left{
     float: left;
-    padding-left: 400px;
+    padding-left: 35%;
 }
 
 /*Moves alarm closer to center/title.*/
 .alarm_pic_right{
     float: right;
-    padding-right: 400px;
+    padding-right: 35%;
 }
 
 /*Changes color of button1 when hovered over*/
