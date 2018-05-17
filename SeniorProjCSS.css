@@ -34,11 +34,14 @@
 
 
 #real_fire_button{
-    width: 500px;
-    height: 100px;
+    align-self: left;
+    text-align: center;
+    width: 300px;
+    height: 300px;
     padding: 32px 32px;
     background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
-    background-size: 100px 100px;
+    background-repeat: no-repeat; 
+    background-size: 300px 300px;
     color: #6262D3;
 }
 
