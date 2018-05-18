@@ -25,7 +25,7 @@ def see_fire():
 def get_see_fire_count():
     # get the information in each of the posts store each post's version into separate variable for use
     get_see_fire = requests.get("http://localhost:9200/button_press/button/yes_alarm_see_fire")
-    see_fire_version = get_see_fire.json()["_version"]
+    see_fire_version = get_see_fire.json().get("_version", 0)
     return json.dumps({"count": see_fire_version})
 
 @app.route("/fire_drill")
@@ -36,7 +36,7 @@ def fire_drill():
 @app.route("/get_fire_drill_count")
 def get_fire_drill_count():
     get_fire_drill = requests.get("http://localhost:9200/button_press/button/fire_drill")
-    fire_drill_version = get_fire_drill.json()["_version"]
+    fire_drill_version = get_fire_drill.json().get("_version", 0)
     return json.dumps({"count": fire_drill_version})
 
 @app.route("/no_fire")
@@ -47,7 +47,7 @@ def no_fire():
 @app.route("/get_no_fire_count")
 def get_no_fire_count():
     get_no_fire = requests.get("http://localhost:9200/button_press/button/yes_alarm_no_fire")
-    no_fire_version = get_no_fire.json()["_version"]
+    no_fire_version = get_no_fire.json().get("_version", 0)
     return json.dumps({"count": no_fire_version})
 
 @app.route("/no_alarm")
@@ -58,5 +58,5 @@ def no_alarm():
 @app.route("/get_no_alarm_count")
 def get_no_alarm_count():
     get_no_alarm = requests.get("http://localhost:9200/button_press/button/no_alarm")
-    no_alarm_version = get_no_alarm.json()["_version"]
+    no_alarm_version = get_no_alarm.json().get("_version", 0)
     return json.dumps({"count": no_alarm_version})

@@ -74,7 +74,7 @@
     border-radius: 50%;
 }
 
-/*
-.end_screen{
-    visibility: hidden;
-}*/
+
+#end_screen{
+    display: none;
+}

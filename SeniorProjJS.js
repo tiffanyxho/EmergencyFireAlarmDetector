@@ -116,7 +116,9 @@ function get_no_alarm_count(){
     return get_no_alarm;
 }
 
-/**TODO: make the prints only print the version number */
+/**TODO: make the prints only print the version number 
+ * Updates the version numbers when user presses buttons
+*/
 function get_count(){
     real_fire_button_clicks = get_see_fire_count();
     fire_drill_button_clicks = get_fire_drill_count();
@@ -127,4 +129,11 @@ function get_count(){
     document.getElementById("fire_drill_text").innerHTML = "It's a drill: " + fire_drill_button_clicks;
     document.getElementById("dont_see_fire_text").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
     document.getElementById("dont_hear_alarm_text").innerHTML = "Don't hear alarm: " + dont_hear_alarm_button;
+
+    document.getElementById("end_screen").style.display = "inline";
+    document.getElementById("buttons_id").style.display = "none";
 }
+
+/**if you want a button that deletes the count and restarts it at 0, then you can make similar function as get one
+ * for the url part, reference picture taken to know what to put in
+ */
