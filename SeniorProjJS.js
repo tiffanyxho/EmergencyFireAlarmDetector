@@ -67,6 +67,7 @@ function get(theUrl){
 /*JS see_fire func*/
 function see_fire(){
     var see_fire = get("http://localhost:5000/see_fire");
+    get_count();
     return "JAVASCRIPT: I SEE FIRE!";
 }
 
@@ -79,6 +80,8 @@ function get_see_fire_count(){
 /*JS fire_drill func */
 function fire_drill(){
     var fire_drill = get("http://localhost:5000/fire_drill");
+    get_count();
+    return "IT'S A FIRE DRILL";
 }
 
 /*get the fire_drill count */
@@ -90,6 +93,7 @@ function get_fire_drill_count(){
 /*JS no_fire func*/
 function no_fire(){
     var no_fire = get("http://localhost:5000/no_fire");
+    get_count();
     return "DON'T SEE FIRE";
 }
 
@@ -101,12 +105,26 @@ function get_no_fire_count(){
 
 /**JS no_alarm func */
 function no_alarm(){
-    no_alarm = get("http://localhost:5000/no_alarm");
+    var no_alarm = get("http://localhost:5000/no_alarm");
+    get_count();
     return "DON'T HEAR ALARM!";
 }
 
 /**get no_alarm count */
 function get_no_alarm_count(){
-    get_no_alarm = requests.get("http://localhost:5000/get_no_alarm_count");
+    var get_no_alarm = get("http://localhost:5000/get_no_alarm_count");
     return get_no_alarm;
+}
+
+/**TODO: make the prints only print the version number */
+function get_count(){
+    real_fire_button_clicks = get_see_fire_count();
+    fire_drill_button_clicks = get_fire_drill_count();
+    dont_see_fire_button_clicks = get_no_fire_count();
+    dont_hear_alarm_button = get_no_alarm_count();
+
+    document.getElementById("real_fire_text").innerHTML = "Real fire: " + real_fire_button_clicks;
+    document.getElementById("fire_drill_text").innerHTML = "It's a drill: " + fire_drill_button_clicks;
+    document.getElementById("dont_see_fire_text").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
+    document.getElementById("dont_hear_alarm_text").innerHTML = "Don't hear alarm: " + dont_hear_alarm_button;
 }
