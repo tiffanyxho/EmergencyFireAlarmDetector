@@ -14,7 +14,7 @@ function display_responses(){
 */
 
 // Should display how many people pressed which button to users
-
+var FLASK="server" //=FLASK + ""
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 var last_button_clicked_id = "";
@@ -66,53 +66,53 @@ function get(theUrl){
 
 /*JS see_fire func*/
 function see_fire(){
-    var see_fire = get("http://localhost:5000/see_fire");
+    var see_fire = get(FLASK + "/see_fire");
     get_count();
     return "JAVASCRIPT: I SEE FIRE!";
 }
 
 /*Get data from the python server to get the see fire count*/
 function get_see_fire_count(){
-    var see_fire = get("http://localhost:5000/get_see_fire_count");
+    var see_fire = get(FLASK + "/get_see_fire_count");
     return see_fire;
 }
 
 /*JS fire_drill func */
 function fire_drill(){
-    var fire_drill = get("http://localhost:5000/fire_drill");
+    var fire_drill = get(FLASK + "/fire_drill");
     get_count();
     return "IT'S A FIRE DRILL";
 }
 
 /*get the fire_drill count */
 function get_fire_drill_count(){
-    var fire_drill = get("http://localhost:5000/get_fire_drill_count");
+    var fire_drill = get(FLASK + "/get_fire_drill_count");
     return fire_drill;
 }
 
 /*JS no_fire func*/
 function no_fire(){
-    var no_fire = get("http://localhost:5000/no_fire");
+    var no_fire = get(FLASK + "/no_fire");
     get_count();
     return "DON'T SEE FIRE";
 }
 
 /*get the no_fire count */
 function get_no_fire_count(){
-    var no_fire = get("http://localhost:5000/get_no_fire_count");
+    var no_fire = get(FLASK + "/get_no_fire_count");
     return no_fire;
 }
 
 /**JS no_alarm func */
 function no_alarm(){
-    var no_alarm = get("http://localhost:5000/no_alarm");
+    var no_alarm = get(FLASK + "/no_alarm");
     get_count();
     return "DON'T HEAR ALARM!";
 }
 
 /**get no_alarm count */
 function get_no_alarm_count(){
-    var get_no_alarm = get("http://localhost:5000/get_no_alarm_count");
+    var get_no_alarm = get(FLASK + "/get_no_alarm_count");
     return get_no_alarm;
 }
 
