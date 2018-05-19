@@ -26,12 +26,6 @@
     padding-right: 35%;
 }
 
-/*Changes color of button1 when hovered over*/
-#real_fire_button:hover {
-    /*background-color: #6CA86E;
-    color: white;*/
-}
-
 
 #real_fire_button{
     align-self: left;
@@ -42,13 +36,9 @@
     background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
     background-repeat: no-repeat; 
     background-size: 300px 300px;
-    color: #6262D3;
+    color: white;
 }
 
-/*Make button2 have a shadow when hovered over*/
-#fire_drill_button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
 #fire_drill_button{
     background-color: #9868C9;
@@ -62,9 +52,14 @@
 }
 
 #dont_see_fire_button{
+    background-color: white;
+    background: url("SeniorProj-NoFirePic.png");
+    width: 300px;
+    height: 300px;
     padding: 32px 32px;
-    background-color: #D198D1;
-    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #dont_hear_alarm_button{

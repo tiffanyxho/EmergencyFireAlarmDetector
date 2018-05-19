@@ -67,7 +67,7 @@ function get(theUrl){
 /*JS see_fire func*/
 function see_fire(){
     var see_fire = get(FLASK + "/see_fire");
-    get_count();
+    change_screen();
     return "JAVASCRIPT: I SEE FIRE!";
 }
 
@@ -80,7 +80,7 @@ function get_see_fire_count(){
 /*JS fire_drill func */
 function fire_drill(){
     var fire_drill = get(FLASK + "/fire_drill");
-    get_count();
+    change_screen();
     return "IT'S A FIRE DRILL";
 }
 
@@ -93,7 +93,7 @@ function get_fire_drill_count(){
 /*JS no_fire func*/
 function no_fire(){
     var no_fire = get(FLASK + "/no_fire");
-    get_count();
+    change_screen();
     return "DON'T SEE FIRE";
 }
 
@@ -106,7 +106,7 @@ function get_no_fire_count(){
 /**JS no_alarm func */
 function no_alarm(){
     var no_alarm = get(FLASK + "/no_alarm");
-    get_count();
+    change_screen();
     return "DON'T HEAR ALARM!";
 }
 
@@ -129,11 +129,18 @@ function get_count(){
     document.getElementById("fire_drill_text").innerHTML = "It's a drill: " + fire_drill_button_clicks;
     document.getElementById("dont_see_fire_text").innerHTML = "Don't see fire: " + dont_see_fire_button_clicks;
     document.getElementById("dont_hear_alarm_text").innerHTML = "Don't hear alarm: " + dont_hear_alarm_button;
-
-    document.getElementById("end_screen").style.display = "inline";
-    document.getElementById("buttons_id").style.display = "none";
 }
 
 /**if you want a button that deletes the count and restarts it at 0, then you can make similar function as get one
  * for the url part, reference picture taken to know what to put in
  */
+
+/** changes screen from buttons to display user responses/counts */
+ function change_screen(){
+    get_count();
+    document.getElementById("end_screen").style.display = "inline";
+    document.getElementById("buttons_id").style.display = "none";
+ }
+
+ /**calls get_count every 10s */
+ setInterval(get_count, 10000);
