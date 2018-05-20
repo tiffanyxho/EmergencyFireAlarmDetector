@@ -13,8 +13,8 @@ function display_responses(){
 }
 */
 
-// Should display how many people pressed which button to users
-var FLASK="server" //=FLASK + ""
+// BEFORE PUSHING TO GITHUB, MAKE SURE TO HAVE FLASK = "server";
+var FLASK="server"; //= "http://localhost:5000" --> for testing on computer
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 var last_button_clicked_id = "";
