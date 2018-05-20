@@ -14,23 +14,15 @@ function display_responses(){
 */
 
 // BEFORE PUSHING TO GITHUB, MAKE SURE TO HAVE FLASK = "server";
-var FLASK="server"; //= "http://localhost:5000" --> for testing on computer
+var FLASK = "http://localhost:5000" //--> for testing on computer; for testing on web --> "server"; 
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 var last_button_clicked_id = "";
 
-
-/*Clears the elemnts in a div*/
-function clearBox(elementID){
-    document.getElementById(elementID).innerHTML = "";
-}
-
 /* Links to help with adding back HTML for buttons... - might need to make a div to hold all of the removed content in the first div
  * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
- * https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript/3450726?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
- * 
- */
 
+ */
 
 /**Server code - retrieving data to make usable - starts here*/
 /**get method (equivalent of get method in requests library in python) */
