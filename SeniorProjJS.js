@@ -1,23 +1,8 @@
 // anchor links - may be handy later
-
-// This link may be handy for solving the below problem: https://stackoverflow.com/questions/1947263/using-an-html-button-to-call-a-javascript-function?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-/* This link was used for the below commented code: https://www.w3schools.com/js/js_htmldom_nodes.asp
-document.getElementById("real_fire_button").addEventListener("click", display_responses);
-
-function display_responses(){
-    var para = document.createElement("p");
-    var node = document.createTextNode("TEXT:!!!");
-    para.appendChild(node);
-    var element = document.getElementsById("notification_text");
-    element.appendChild(para);
-}
-*/
-
 // BEFORE PUSHING TO GITHUB, MAKE SURE TO HAVE FLASK = "server";
 var FLASK="server"; //= "http://localhost:5000" --> for testing on computer
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
-var last_button_clicked_id = "";
 
 /* Links to help with adding back HTML for buttons... - might need to make a div to hold all of the removed content in the first div
  * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
