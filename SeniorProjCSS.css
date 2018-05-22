@@ -7,6 +7,7 @@
 /*Set background color*/
 .container{
     background-color: #F1D0D6;
+    /*background-color: white;*/
 }
 
 /*centers all buttons*/
@@ -26,7 +27,7 @@
     padding-right: 35%;
 }
 
-
+/*sets button color to white, align left, text center, pic from google drive, no repeat, 300px 300px pic & but size, padding*/
 #real_fire_button{
     align-self: left;
     text-align: center;
@@ -40,7 +41,7 @@
     background-color: white;
 }
 
-
+/*white button 300px 300px, pic uploaded in folder, text center, no-repeat, padding*/
 #fire_drill_button{
     width: 300px;
     height: 300px;
@@ -51,8 +52,8 @@
     background-color: white;
 }
 
+/*same as prev. button, but 100% pic size, diff. pic.*/
 #dont_see_fire_button{
-    background-color: white;
     background: url("SeniorProj-NoFirePic.png");
     width: 300px;
     height: 300px;
@@ -60,7 +61,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: white;
 }
+
 
 #dont_hear_alarm_button{
     padding: 32px 32px;
