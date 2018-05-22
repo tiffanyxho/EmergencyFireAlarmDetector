@@ -29,49 +29,43 @@
 
 /*sets button color to white, align left, text center, pic from google drive, no repeat, 300px 300px pic & but size, padding*/
 #real_fire_button{
-    align-self: left;
     text-align: center;
-    width: 300px;
-    height: 300px;
-    padding: 32px 32px;
     background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
-    background-repeat: no-repeat; 
-    background-size: 300px 300px;
-    color: white;
-    background-color: white;
+
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
 }
 
 /*white button 300px 300px, pic uploaded in folder, text center, no-repeat, padding*/
 #fire_drill_button{
-    width: 300px;
-    height: 300px;
-    padding: 32px 32px;
     background: url("SeniorProj-FireDrillPic.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
 }
 
 /*same as prev. button, but 100% pic size, diff. pic.*/
 #dont_see_fire_button{
     background: url("SeniorProj-NoFirePic.png");
-    width: 300px;
-    height: 300px;
-    padding: 32px 32px;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-color: white;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
 }
 
 
 #dont_hear_alarm_button{
-    padding: 32px 32px;
-    background-color: #636CD7;
-    border-radius: 50%;
-    background-color: white;
+    background: url("SeniorProj-NoAlarmHeard-Pic1.png");  
+    background-size: 100%;
 }
 
+#real_fire_button, #dont_hear_alarm_button, #fire_drill_button, #dont_see_fire_button{
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    color: white;
+    padding: 32px 32px;
+}
 
 #end_screen{
     display: none;
