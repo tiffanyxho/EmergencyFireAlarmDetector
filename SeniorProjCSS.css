@@ -52,10 +52,14 @@
 
 
 #dont_hear_alarm_button{
-    background: url("SeniorProj-NoAlarmHeard-Pic1.png");  
+    background: url("SeniorProj-NoAlarmHeard-Pic1.png");
     background-size: 100%;
     font-size: 28px;
     font-family: 'Roboto Slab', serif;
+}
+
+span{
+    display: block;
 }
 
 /**Common properties in all butons: 300px by 300px, no-repeat image, background center, background white, text white, 32px 32px padding*/
