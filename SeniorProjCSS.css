@@ -31,7 +31,6 @@
 #real_fire_button{
     text-align: center;
     background: url("https://drive.google.com/uc?id=17_4RT4JGTnc7sSlFbN5IL80SPSO89UZt");
-
     font-size: 28px;
     font-family: 'Roboto Slab', serif;
 }
@@ -55,8 +54,11 @@
 #dont_hear_alarm_button{
     background: url("SeniorProj-NoAlarmHeard-Pic1.png");  
     background-size: 100%;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
 }
 
+/**Common properties in all butons: 300px by 300px, no-repeat image, background center, background white, text white, 32px 32px padding*/
 #real_fire_button, #dont_hear_alarm_button, #fire_drill_button, #dont_see_fire_button{
     width: 300px;
     height: 300px;

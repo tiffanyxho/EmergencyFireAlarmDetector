@@ -1,6 +1,6 @@
 // anchor links - may be handy later
 // BEFORE PUSHING TO GITHUB, MAKE SURE TO HAVE FLASK = "server";
-var FLASK = "server"; //"http://localhost:5000"; //--> for testing on computer ="server";
+var FLASK ="http://localhost:5000"; //--> for testing on computer ="server";
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 
@@ -13,7 +13,7 @@ var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 /**get method (equivalent of get method in requests library in python) */
 function get(theUrl){
     var xmlHttp  =  new XMLHttpRequest();
-    xmlHttp.open(  "GET", theUrl,false);  // false for synchronous request
+    xmlHttp.open(  "GET", theUrl, false);  // false for synchronous request
     xmlHttp.send(  null  );
     return xmlHttp.responseText;
 }
