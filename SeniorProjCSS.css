@@ -50,6 +50,11 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.dont_see_text:after{
+    content: '\A';
+    white-space: pre;
+}
+
 
 #dont_hear_alarm_button{
     background: url("SeniorProj-NoAlarmHeard-Pic1.png");
@@ -58,9 +63,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-span{
-    display: block;
-}
+
 
 /**Common properties in all butons: 300px by 300px, no-repeat image, background center, background white, text white, 32px 32px padding*/
 #real_fire_button, #dont_hear_alarm_button, #fire_drill_button, #dont_see_fire_button{

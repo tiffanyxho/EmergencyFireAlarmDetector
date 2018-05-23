@@ -32,14 +32,18 @@
             5) Real fire spotted 
             And also contains the text between the buttons.-->
             <div class = "buttons" id = "buttons_id">
-                <button id = "real_fire_button" type = "button" onclick = "see_fire();">See fire!!</button>
-                <p>OR</p>
-                <button id = "dont_hear_alarm_button" type = "button" onclick = "no_alarm();">Don't hear alarm</button>
+                <div>
+                    <button id = "real_fire_button" type = "button" onclick = "see_fire();">See fire!!</button>
+                    <p>OR</p>
+                    <button id = "dont_hear_alarm_button" type = "button" onclick = "no_alarm();">Don't hear alarm</button>
+                </div>
                 <br>
                 <br>
-                <p id = "hear_alarm_text">Or I hear a fire alarm &#38;...</p>
-                <button id = "fire_drill_button" type = "button" onclick = "fire_drill();">&nbsp;</button>
-                <button id = "dont_see_fire_button" type = "button" onclick = "no_fire();"><span>Don't see</span><span>fire</span></button>
+                </div>
+                    <p id = "hear_alarm_text">Or I hear a fire alarm &#38;...</p>
+                    <button id = "fire_drill_button" type = "button" onclick = "fire_drill();">&nbsp;</button>
+                    <button id = "dont_see_fire_button" type = "button" onclick = "no_fire();"><div class = "spans"><span>Don't see</span><span>fire</span></div></button>
+                </div>
             </div>
             <div class = "end_screen" id = "end_screen">
                 <p id = "real_fire_text">Real fire: 0</p>
