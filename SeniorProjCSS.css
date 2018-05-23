@@ -2,6 +2,7 @@
 .title{
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    font-size: 30px; 
 }
 
 /*Set background color*/
@@ -63,7 +64,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
-
+/*{
+    width: 50%;
+    margin-left: 15%;
+}*/
 
 /**Common properties in all butons: 300px by 300px, no-repeat image, background center, background white, text white, 32px 32px padding*/
 #real_fire_button, #dont_hear_alarm_button, #fire_drill_button, #dont_see_fire_button{
@@ -73,6 +77,8 @@
     background-position: center;
     background-color: white;
     color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
     padding: 32px 32px;
 }
 

@@ -1,6 +1,6 @@
 // anchor links - may be handy later
 // BEFORE PUSHING TO GITHUB, MAKE SURE TO HAVE FLASK = "server";
-var FLASK = "server";//"http://localhost:5000"; //--> for testing on computer ="server";
+var FLASK = "http://localhost:5000"; //--> for testing on computer ="server";
 var real_fire_button_clicks = 0, fire_drill_button_clicks = 0;
 var dont_see_fire_button_clicks = 0, dont_hear_alarm_button = 0;
 
